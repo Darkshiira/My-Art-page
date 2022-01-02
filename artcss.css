@@ -104,12 +104,33 @@ Right:0;
 Top:600px;
 }
 
+.Fairy {
+  Width:300px;
+  Height:425px;
+  position:relative;
+  left:600px;
+}
+
+.Fairy:hover {
+  Width:600px;
+  Height:849px;
+  position:relative;
+  left:800px;
+  Top:10px;
+}
+
+.fairytext {
+  Width: 50%;
+  Position: relative;
+  bottom: 300px;
+  margin:0 0 0 350px;
+  padding:0;
+}
+
 .First-body {
   Height: 600px;
   Padding-top: 12rem;
 }
-
-
 
 .Footer {
   Color: White;
@@ -230,8 +251,8 @@ Top:600px;
     position:absolute;
     top: 1100px;
     left: 600px;
-    }
-}
+  }
+
 .Palette {
   Width: 900px;
   Height: 765px;
@@ -263,6 +284,22 @@ Top:600px;
   position: absolute;
   left: 5%;
   top: 25%;
+}
+
+.Yearline21 {
+  border-left: 3px solid grey;
+  height: 1150px;
+  position: absolute;
+  left: 5%;
+  top: 175%;
+}
+.year21 {
+  position: absolute;
+  width:12.5%;
+  left: 0;
+  top: 1px;
+  margin:0;
+  Padding: 0;
 }
 .year22 {
   position: absolute;
