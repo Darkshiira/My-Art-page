@@ -77,6 +77,14 @@ p {
   Top:20px;
 }
 
+.canvas:hover {
+  Width:70px;
+  Height:70px;
+  Position: Absolute;
+  Right:560px;
+  Top:10px;
+}
+
 .First-body {
   Height: 600px;
   Padding-top: 12rem;
@@ -103,6 +111,14 @@ Color: White;
   Top:20px;
 }
 
+.glass:hover {
+  Width:70px;
+  Height:70px;
+  Position: Absolute;
+  Right:440px;
+  Top:10px;
+}
+
 .head {
   Height: 1000px;
 }
@@ -115,12 +131,28 @@ Color: White;
   Top:20px;
 }
 
+.Home:hover {
+  Width:70px;
+  Height:70px;
+  Position: Absolute;
+  Right:680px;
+  Top:10px;
+}
+
 .ipad {
   Width:50px;
   Height:50px;
   Position: Absolute;
   Right:320px;
   Top:20px;
+}
+
+.ipad:hover {
+  Width:70px;
+  Height:70px;
+  Position: Absolute;
+  Right:320px;
+  Top:10px;
 }
 
 .Menu {
@@ -145,6 +177,15 @@ Color: White;
   Right:80px;
   Top:20px;
 }
+
+.more:hover {
+  Width:70px;
+  Height:70px;
+  Position: Absolute;
+  Right:80px;
+  Top:10px;
+}
+
 .Palette {
   Width:900px;
   Height:765px;
@@ -153,10 +194,19 @@ Color: White;
  Right: 0;
  Top: 90px;
  }
- .sketch {
+
+  .sketch {
    Width:50px;
    Height:50px;
    Position: Absolute;
    Right:200px;
    Top:20px;
+ }
+
+ .sketch:hover {
+  Width:70px;
+  Height:70px;
+  Position: Absolute;
+  Right:200px;
+  Top:10px;
  }
