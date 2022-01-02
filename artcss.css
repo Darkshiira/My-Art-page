@@ -5,25 +5,27 @@ body {
   text-align: center;
   Margin: 0;
 }
+
 h1 {
   font-family: "Poppins", sans-serif;
   display: Inline;
   Width: 50%;
-  Margin: 0;
-  Position:absolute;
+  Margin: 10px 0 0;
+  Position: absolute;
   Left: 0;
 }
 
 h2 {
-font-family: "Licorice", cursive;
-font-size: 3rem;
-Width: 50%;
-Clear:left;
-Margin: 50 0 20;
+  font-family: "Licorice", cursive;
+  font-size: 3rem;
+  Width: 50%;
+  Clear: left;
+  Margin: 50 0 20;
 }
 
 h3 {
   Font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 h4 {
@@ -39,7 +41,6 @@ p {
   font-size: 1.5rem;
   padding-left: 50px;
 }
-
 
 /***********CLASS********/
 .btn {
@@ -70,19 +71,33 @@ p {
 }
 
 .canvas {
-  Width:50px;
-  Height:50px;
+  Width: 50px;
+  Height: 50px;
   Position: Absolute;
-  Right:560px;
-  Top:20px;
+  Right: 560px;
+  Top: 20px;
 }
 
 .canvas:hover {
-  Width:70px;
-  Height:70px;
+  Width: 70px;
+  Height: 70px;
   Position: Absolute;
-  Right:560px;
-  Top:10px;
+  Right: 560px;
+  Top: 10px;
+}
+
+.dragonhead {
+margin:0;
+position:absolute;
+right: 0;
+top:100px;
+}
+
+.dragontail {
+margin:0;
+position:absolute;
+Right:0;
+Top:600px;
 }
 
 .First-body {
@@ -90,33 +105,40 @@ p {
   Padding-top: 12rem;
 }
 
+.Line {
+  border-left: 3px solid grey;
+  height: 900px;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+}
+
 .Footer {
   Color: White;
-  background-color:#009DAE;
+  background-color: #009DAE;
   height: 100px;
   padding-top: 50px;
 }
 
 .footer-link {
-Color: White;
+  Color: White;
   Font-style: "Open Sans", Sans-serif;
-
 }
 
 .glass {
-  Width:50px;
-  Height:50px;
+  Width: 50px;
+  Height: 50px;
   Position: Absolute;
-  Right:440px;
-  Top:20px;
+  Right: 440px;
+  Top: 20px;
 }
 
 .glass:hover {
-  Width:70px;
-  Height:70px;
+  Width: 70px;
+  Height: 70px;
   Position: Absolute;
-  Right:440px;
-  Top:10px;
+  Right: 440px;
+  Top: 10px;
 }
 
 .head {
@@ -124,89 +146,112 @@ Color: White;
 }
 
 .Home {
-  Width:50px;
-  Height:50px;
+  Width: 50px;
+  Height: 50px;
   Position: Absolute;
-  Right:680px;
-  Top:20px;
+  Right: 680px;
+  Top: 20px;
 }
 
 .Home:hover {
-  Width:70px;
-  Height:70px;
+  Width: 70px;
+  Height: 70px;
   Position: Absolute;
-  Right:680px;
-  Top:10px;
+  Right: 680px;
+  Top: 10px;
 }
 
 .ipad {
-  Width:50px;
-  Height:50px;
+  Width: 50px;
+  Height: 50px;
   Position: Absolute;
-  Right:320px;
-  Top:20px;
+  Right: 320px;
+  Top: 20px;
 }
 
 .ipad:hover {
-  Width:70px;
-  Height:70px;
+  Width: 70px;
+  Height: 70px;
   Position: Absolute;
-  Right:320px;
-  Top:10px;
+  Right: 320px;
+  Top: 10px;
+}
+
+.ipad2 {
+  background-color: #009DAE;
+  border-radius: 5px 20px 5px;
+  position: absolute;
+  left: 50px;
 }
 
 .Menu {
-  Position:Fixed;
-  Right:0;
+  Position: Fixed;
+  Right: 0;
   height: 85px;
   Width: 50%;
-  margin:0 0 30px;
+  margin: 0 0 30px;
   background-color: #009DAE;
   z-index: 7;
 }
 
 .Mid-body {
-  Height:100px;
+  Height: 100px;
   Padding: 200px 0 100px;
 }
 
 .more {
-  Width:50px;
-  Height:50px;
+  Width: 50px;
+  Height: 50px;
   Position: Absolute;
-  Right:80px;
-  Top:20px;
+  Right: 80px;
+  Top: 20px;
 }
 
 .more:hover {
-  Width:70px;
-  Height:70px;
+  Width: 70px;
+  Height: 70px;
   Position: Absolute;
-  Right:80px;
-  Top:10px;
+  Right: 80px;
+  Top: 10px;
 }
 
+.nature {
+  width: 300px;
+  Height:300px;
+}
+
+.nature:hover {
+  width: 600px;
+  Height: 600px;
+
+}
 .Palette {
-  Width:900px;
-  Height:765px;
+  Width: 900px;
+  Height: 765px;
   Margin: 0;
- Position: Absolute;
- Right: 0;
- Top: 90px;
- }
-
-  .sketch {
-   Width:50px;
-   Height:50px;
-   Position: Absolute;
-   Right:200px;
-   Top:20px;
- }
-
- .sketch:hover {
-  Width:70px;
-  Height:70px;
   Position: Absolute;
-  Right:200px;
-  Top:10px;
- }
+  Right: 0;
+  Top: 90px;
+}
+
+.sketch {
+  Width: 50px;
+  Height: 50px;
+  Position: Absolute;
+  Right: 200px;
+  Top: 20px;
+}
+
+.sketch:hover {
+  Width: 70px;
+  Height: 70px;
+  Position: Absolute;
+  Right: 200px;
+  Top: 10px;
+}
+
+.year22 {
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
