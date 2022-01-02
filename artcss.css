@@ -85,7 +85,11 @@ p {
   Right: 560px;
   Top: 10px;
 }
-
+.dragon {
+width: 50%;
+position:absolute;
+top: 500px;
+}
 .dragonhead {
 margin:0;
 position:absolute;
@@ -105,13 +109,7 @@ Top:600px;
   Padding-top: 12rem;
 }
 
-.Line {
-  border-left: 3px solid grey;
-  height: 900px;
-  position: absolute;
-  left: 5%;
-  top: 25%;
-}
+
 
 .Footer {
   Color: White;
@@ -219,14 +217,20 @@ Top:600px;
   width: 300px;
   Height:300px;
   position:absolute;
-  left: 100px;
-  top: 900px;
+  left: 150px;
+  top: 1000px;
 }
 
 .nature:hover {
   width: 600px;
   Height: 600px;
-
+}
+  .naturetext{
+    width: 50%;
+    position:absolute;
+    top: 1100px;
+    left: 600px;
+    }
 }
 .Palette {
   Width: 900px;
@@ -253,6 +257,13 @@ Top:600px;
   Top: 10px;
 }
 
+.Yearline {
+  border-left: 3px solid grey;
+  height: 1150px;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+}
 .year22 {
   position: absolute;
   left: 0;
