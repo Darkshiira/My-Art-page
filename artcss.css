@@ -218,6 +218,9 @@ Top:600px;
 .nature {
   width: 300px;
   Height:300px;
+  position:absolute;
+  left: 100px;
+  top: 900px;
 }
 
 .nature:hover {
