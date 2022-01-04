@@ -42,6 +42,8 @@ p {
   padding-left: 50px;
 }
 
+
+
 /***********CLASS********/
 .btn {
   background: #71DFE7;
@@ -84,47 +86,6 @@ p {
   Position: Absolute;
   Right: 560px;
   Top: 10px;
-}
-.dragon {
-width: 50%;
-position:absolute;
-top: 500px;
-}
-.dragonhead {
-margin:0;
-position:absolute;
-right: 0;
-top:100px;
-}
-
-.dragontail {
-margin:0;
-position:absolute;
-Right:0;
-Top:600px;
-}
-
-.Fairy {
-  Width:300px;
-  Height:425px;
-  position:relative;
-  left:600px;
-}
-
-.Fairy:hover {
-  Width:600px;
-  Height:849px;
-  position:relative;
-  left:800px;
-  Top:10px;
-}
-
-.fairytext {
-  Width: 50%;
-  Position: relative;
-  bottom: 300px;
-  margin:0 0 0 350px;
-  padding:0;
 }
 
 .First-body {
@@ -196,21 +157,18 @@ Top:600px;
   Top: 10px;
 }
 
-.ipad2 {
-  background-color: #009DAE;
-  border-radius: 5px 20px 5px;
-  position: absolute;
-  left: 50px;
-}
-
 .Menu {
-  Position: Fixed;
-  Right: 0;
-  height: 85px;
-  Width: 50%;
-  margin: 0 0 30px;
-  background-color: #009DAE;
-  z-index: 7;
+    Position: Fixed;
+    Right: 0;
+    height: 85px;
+    Width: 50%;
+    margin: 0 0 30px;
+    background-color: #009DAE;
+    z-index: 7;
+    border-radius: 8px 0px 0px 8px;
+    border-width: 0 0 2px 2px;
+    border-color: #1DB9C3;
+    border-style:inset;
 }
 
 .Mid-body {
@@ -233,25 +191,6 @@ Top:600px;
   Right: 80px;
   Top: 10px;
 }
-
-.nature {
-  width: 300px;
-  Height:300px;
-  position:absolute;
-  left: 150px;
-  top: 1000px;
-}
-
-.nature:hover {
-  width: 600px;
-  Height: 600px;
-}
-  .naturetext{
-    width: 50%;
-    position:absolute;
-    top: 1100px;
-    left: 600px;
-  }
 
 .Palette {
   Width: 900px;
@@ -276,33 +215,4 @@ Top:600px;
   Position: Absolute;
   Right: 200px;
   Top: 10px;
-}
-
-.Yearline {
-  border-left: 3px solid grey;
-  height: 1150px;
-  position: absolute;
-  left: 5%;
-  top: 25%;
-}
-
-.Yearline21 {
-  border-left: 3px solid grey;
-  height: 1150px;
-  position: absolute;
-  left: 5%;
-  top: 175%;
-}
-.year21 {
-  position: absolute;
-  width:12.5%;
-  left: 0;
-  top: 1px;
-  margin:0;
-  Padding: 0;
-}
-.year22 {
-  position: absolute;
-  left: 0;
-  top: 1px;
 }
