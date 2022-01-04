@@ -1,0 +1,259 @@
+body {
+  background-color: #C2FFF9;
+  Font-family: "Open sans", sans-serif;
+  color: #009DAE;
+  text-align: center;
+  Margin: 0;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  display: Inline;
+  Width: 50%;
+  Margin: 10px 35px 0;
+  Position: absolute;
+  Left: 0;
+}
+
+/*Canvas */
+.Canvastop {
+  height: 150px;
+  width: 150px;
+  background-color: #009DAE;
+  border-radius: 5px 20px 5px;
+  border-style: inset;
+  border-color: #1DB9C3;
+  padding: 20px;
+  position: absolute;
+  left: 50px;
+}
+
+.canvas {
+  Width: 50px;
+  Height: 50px;
+  Position: Absolute;
+  Right: 560px;
+  Top: 20px;
+}
+
+.canvas:hover {
+  Width: 70px;
+  Height: 70px;
+  Position: Absolute;
+  Right: 560px;
+  Top: 10px;
+}
+
+.glass {
+  Width: 50px;
+  Height: 50px;
+  Position: Absolute;
+  Right: 440px;
+  Top: 20px;
+}
+
+.glass:hover {
+  Width: 70px;
+  Height: 70px;
+  Position: Absolute;
+  Right: 440px;
+  Top: 10px;
+}
+
+.Glassreal {
+  Width: 150px;
+  Height: 150px;
+  background-color: #009DAE;
+  border-radius: 5px 20px 5px;
+  border-style: inset;
+  position: absolute;
+  border-color: #1DB9C3;
+  left: 50px;
+  padding: 6px;
+}
+
+
+.Home {
+  Width: 50px;
+  Height: 50px;
+  Position: Absolute;
+  Right: 680px;
+  Top: 20px;
+}
+
+.Home:hover {
+  Width: 70px;
+  Height: 70px;
+  Position: Absolute;
+  Right: 680px;
+  Top: 10px;
+}
+
+.ipad {
+  Width: 50px;
+  Height: 50px;
+  Position: Absolute;
+  Right: 320px;
+  Top: 20px;
+}
+
+.ipad:hover {
+  Width: 70px;
+  Height: 70px;
+  Position: Absolute;
+  Right: 320px;
+  Top: 10px;
+}
+
+.Menu {
+  Position: Fixed;
+  Right: 0;
+  height: 85px;
+  Width: 50%;
+  margin: 0 0 30px;
+  background-color: #009DAE;
+  z-index: 7;
+  border-radius: 8px 0px 0px 8px;
+  border-width: 0 0 2px 2px;
+  border-color: #1DB9C3;
+  border-style: inset;
+}
+
+.more {
+  Width: 50px;
+  Height: 50px;
+  Position: Absolute;
+  Right: 80px;
+  Top: 20px;
+}
+
+.more:hover {
+  Width: 70px;
+  Height: 70px;
+  Position: Absolute;
+  Right: 80px;
+  Top: 10px;
+}
+
+.sketch {
+  Width: 50px;
+  Height: 50px;
+  Position: Absolute;
+  Right: 200px;
+  Top: 20px;
+}
+
+.sketch:hover {
+  Width: 70px;
+  Height: 70px;
+  Position: Absolute;
+  Right: 200px;
+  Top: 10px;
+}
+
+/*Midcontainer*/
+.Mid-container {
+  Margin: 0;
+  Padding-top: 220px;
+  text-align: left;
+}
+
+ul li {
+  list-style: none;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  width: 50%;
+  display: inline;
+  Float: left;
+}
+
+.year::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2.5%;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.time year {
+  Position: absolute;
+  Margin: 100px 100px;
+}
+
+.timeline {
+  content: none;
+  position: absolute;
+  height: 100%;
+  Width: 3px;
+  left: 3%;
+  background-color: grey;
+}
+
+/*Ipad*/
+.ipad2 {
+  background-color: #009DAE;
+  border-radius: 5px 20px 5px;
+  border-style: inset;
+  position: absolute;
+  border-color: #1DB9C3;
+  left: 50px;
+  padding: 10px;
+}
+
+.dragonhead {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+
+.dragontail {
+  margin: 0;
+  position: absolute;
+  Right: 0;
+  Top: 600px;
+}
+
+.nature {
+  width: 300px;
+  Height: 300px;
+  padding-right: 30px;
+  Float: left;
+}
+
+.nature:hover {
+  width: 600px;
+  Height: 600px;
+}
+
+.Fairy {
+  Width: 300px;
+  Height: 425px;
+  padding-right: 30px;
+  Float: left;
+}
+
+.Fairy:hover {
+  Width: 600px;
+  Height: 849px;
+}
+
+/*Foooter*/
+.Footer {
+  Color: White;
+  background-color: #009DAE;
+  height: 100px;
+  position: Absolute;
+  Left: 0;
+  Right:0;
+  Top:200%;
+}
+
+.footer-link {
+  Color: White;
+  Font-style: "Open Sans", Sans-serif;
+}
