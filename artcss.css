@@ -55,10 +55,13 @@ h4 {
 nav {
   background-color: #009DAE;
   grid-area: nav;
+  width: 50%;
   border-radius: 8px 0px 0px 8px;
   border-width: 0 0 2px 2px;
   border-color: #1DB9C3;
   border-style: inset;
+  position:fixed;
+  right:0;
 }
 
 .navimg {
