@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+}
+
+p {
+  width: 50%;
+  margin: 10% 25%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  Font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: #009DAE;
+}
+
+h4 {
+  Font-family: "Open sans", sans-serif;
+  color: #009DAE;
+  font-weight: bolder;
+  margin: 0;
+  text-align: left;
+}
+
+/***********************************TOP********************************/
+.container {
+  background-color: #C2FFF9;
+  text-align: center;
+  height: 700vh;
+}
+
+#topcontainer {
+  grid-area: "topcontainer";
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Canvastop title nav"
+}
+
+.toptitle {
+  font-family: "Poppins", sans-serif;
+  color: #009DAE;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.topimg {
+  grid-area: "Canvastop";
+}
+
+.Canvastop {
+  height: 150px;
+  width: 150px;
+  background-color: #009DAE;
+  border-radius: 5px 20px 5px;
+  border-style: inset;
+  border-color: #1DB9C3;
+  padding: 20px;
+}
+
+.Title {
+  grid-area: "title";
+}
+
+nav {
+  background-color: #009DAE;
+  grid-area: "nav";
+  width: 50%;
+  border-radius: 8px 0px 0px 8px;
+  border-width: 0 0 2px 2px;
+  border-color: #1DB9C3;
+  border-style: inset;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.navimg {
+  Width: 50px;
+  Height: 50px;
+  padding: 4px 5%;
+  margin-bottom: 0;
+}
+
+.navimg:hover {
+  Width: 70px;
+  Height: 70px;
+}
+
+/****************************MAIN**************************/
+#main {
+  grid-area: "main";
+}
+
+.timeline {
+  grid-area: timeline;
+  content: none;
+  position: absolute;
+  top: 300px;
+  height: 500%;
+  Width: 3px;
+  left: 3%;
+  background-color: grey;
+}
+
+.outer {
+  padding: 80px 10px 10px 80px;
+}
+
+.canvases {
+  Width: 400px;
+  height: 400px;
+  padding-right: 15%;
+}
+
+.canvases:hover {
+  Width: 800px;
+  height: 800px;
+}
+
+.card {
+  width: 150%;
+}
+
+.cardp {
+  font-size: 1rem;
+  display: inline;
+  margin: 0;
+  float: right;
+  line-height: 2;
+  padding: 150px 1%;
+  text-align: left;
+  width: 40%;
+}
+
+.year {
+  list-style: none;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  width: 50%;
+  display: inline;
+  Float: left;
+  font-family: "Open Sans", sans-serif;
+  Font-size: 2rem;
+}
+
+.year::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2.5%;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/**********************************FOOTER*******************/
+#Footer {
+  grid-area: "footer";
+  Color: White;
+  background-color: #009DAE;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.footer-link {
+  Color: White;
+  Font-style: "Open Sans", Sans-serif;
+}
+
+.footername {
+  color: white;
+  text-align: center;
+}
+
+@media (min-width:1347px) and (max-width: 1616px) {
+  nav {
+    width: 50%;
+  }
+
+  .navimg {
+    Width: 45px;
+    Height: 45px;
+    padding: 4px 4%;
+  }
+
+  .container {
+    height: 800vh;
+  }
+}
+
+@media (min-width:1169px) and (max-width: 1347px) {
+  nav {
+    width: 60%;
+  }
+
+  .toptitle {
+    padding-top: 15%;
+  }
+
+  .navimg {
+    Width: 40px;
+    Height: 40px;
+    padding: 4px 4%;
+  }
+
+  .container {
+    height: 750vh;
+  }
+}
+
+.card {
+  Width: 175%;
+}
+
+h3 {
+  display: block;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1169px) {
+  .card {
+    padding-top: 200px;
+  }
+
+  .test {
+    text-align: left;
+  }
+
+  .cardp {
+    float: left;
+    margin-left: 15%;
+    padding-top: 2%;
+  }
+
+  .toptitle {
+    padding-top: 30%;
+  }
+
+  .topimg {
+    padding-top: 25%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .navimg {
+    Width: 40px;
+    Height: 40px;
+    padding: 4px 4%;
+  }
+
+  .container {
+    height: 850vh;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  .card {
+    padding-top: 200px;
+  }
+
+  .test {
+    text-align: left;
+    width: 60%;
+  }
+
+  .cardp {
+    float: left;
+    margin-left: 15%;
+    padding-top: 2%;
+    width: 60%;
+  }
+
+  .toptitle {
+    padding: 35% 25%;
+  }
+
+  .topimg {
+    padding-top: 30%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .navimg {
+    Width: 40px;
+    Height: 40px;
+    padding: 4px 4%;
+  }
+
+  .container {
+    height: 850vh;
+  }
+}
