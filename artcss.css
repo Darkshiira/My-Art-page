@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  text-align:center;
 }
 
 .container {
@@ -7,17 +8,28 @@ body {
   text-align: center;
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 2fr 2fr 1fr;
-  grid-template-areas: "title title nav nav"
-    "text text main main"
-    "contact contact contact contact"
-    "footer footer footer footer";
+  grid-template-areas: "header"
+    "main"
+    "contact"
+    "footer";
+}
+
+header {
+  grid-area: "header";
+  display:grid;
+  margin:0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Title nav"
+
 }
 
 p {
   width: 50%;
-  margin: 10% 25%;
+  margin: 10% auto;
+  width: 50%;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
 }
@@ -25,7 +37,7 @@ p {
 h1 {
   font-family: "Poppins", sans-serif;
   color: #009DAE;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h2 {
@@ -49,19 +61,19 @@ h4 {
 
 .Title {
   background-color: #C2FFF9;
-  grid-area: title;
+  grid-area: "title";
 }
 
 nav {
   background-color: #009DAE;
-  grid-area: nav;
+  grid-area: "nav";
   width: 50%;
   border-radius: 8px 0px 0px 8px;
   border-width: 0 0 2px 2px;
   border-color: #1DB9C3;
   border-style: inset;
-  position:fixed;
-  right:0;
+  position: fixed;
+  right: 0;
 }
 
 .navimg {
@@ -78,30 +90,39 @@ nav {
 
 main {
   background-color: #C2FFF9;
-  grid-area: main;
+  grid-area: "main";
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "text palette"
 }
 
 .Text {
   background-color: #C2FFF9;
-  grid-area: text;
+  grid-area: "text";
+  float:left;
+  text-align:center;
 }
 
 .Contact {
   background-color: #C2FFF9;
-  grid-area: contact;
+  grid-area: "contact";
   padding: 10%;
+  text-align:center;
 }
 
 footer {
   background-color: #009DAE;
-  grid-area: footer;
+  grid-area: "footer";
 }
 
 .Palette {
   Width: 75%;
-  Height: 85%;
   Margin: 2% 0 auto;
-  Float: Right;
+}
+.palettediv {
+  grid-area: "palette";
+  padding-top: 25%;
 }
 
 .btn {
@@ -140,22 +161,43 @@ footer {
 .footer-link {
   Color: White;
   Font-style: "Open Sans", Sans-serif;
+  padding-right:2%;
+
+}
+
+.footp {color:white;
+font-size: 1rem;
+margin: 10px auto 15px;
+width:100%;}
+
+.co {
+  margin:0;
+}
+
+@media (min-width: 960px) and (max-width: 1616px) {
+  .navimg {
+    width: 40px;
+    height: 40px;
+    padding: 4px 3%;
+  }
+
+  .Palette {
+    Width: 75%;
+    padding-top: 10%;
+  }
 }
 
 @media only screen and (max-width: 667px) {
-  .container {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.8fr;
-    grid-template-areas: "title nav"
-      "main main"
-      "text text"
-      "contact contact"
-      "footer footer";
+  .header {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    grid-template-areas: "nav"
+      "title";
   }
 
   .Palette {
     Width: 100%;
-    Height: 100%;
     Margin: 2% 0 auto;
     Float: Right;
   }
@@ -165,16 +207,31 @@ footer {
     width: 100%;
     margin: 0;
   }
+
+  nav {
+    width: 100%;
+    grid-area:"nav";
+  }
+
+  .navimg {
+    width: 40px;
+    height: 40px;
+    padding: 4px 3%;
+  }
+
+  .Title {
+    width: 100%;
+    grid-area: "title";
+    margin-top: 20%;
+  }
 }
 
 @media (min-width: 667px) and (max-width: 960px) {
-  .container {
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 0.2fr 1fr 1fr 0.8fr;
-    grid-template-areas: "title nav nav"
-      "text text main"
-      "contact contact contact"
-      "footer footer footer";
+  .header {
+    grid-template-columns: 2fr;
+    grid-template-rows: 0.2fr 02fr;
+    grid-template-areas: "nav"
+      "title";
   }
 
   .Palette {
@@ -188,5 +245,20 @@ footer {
     font-size: 1rem;
     width: 100%;
     margin: 0;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .navimg {
+    width: 40px;
+    height: 40px;
+    padding: 4px 3%;
+  }
+  .Title {
+    width: 100%;
+    grid-area: "title";
+    margin-top: 10%;
   }
 }
