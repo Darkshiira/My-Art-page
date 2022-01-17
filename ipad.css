@@ -44,7 +44,7 @@ h1 {
   grid-template-areas: "timeline time";
 }
 
-.Footer {
+Footer {
   grid-area: footer;
   Color: White;
   background-color: #009DAE;
@@ -208,6 +208,25 @@ ul li {
   list-style: none;
   width: 50%;
   padding-bottom: 100px;
+}
+
+
+/*Foooter*/
+footer {
+  Color: White;
+  background-color: #009DAE;
+  padding-top: 5%;
+}
+
+.footer-link {
+  Color: White;
+  Font-style: "Open Sans", Sans-serif;
+  padding-right:2%;
+
+}
+
+.co {
+  margin:0;
 }
 
 /************************MEDIA***************************/
