@@ -210,7 +210,6 @@ ul li {
   padding-bottom: 100px;
 }
 
-
 /*Foooter*/
 footer {
   Color: White;
@@ -221,12 +220,11 @@ footer {
 .footer-link {
   Color: White;
   Font-style: "Open Sans", Sans-serif;
-  padding-right:2%;
-
+  padding-right: 2%;
 }
 
 .co {
-  margin:0;
+  margin: 0;
 }
 
 /************************MEDIA***************************/
@@ -245,10 +243,9 @@ footer {
 
 @media (min-width:785px) and (max-width: 1013px) {
   .container {
-    height:400vh;
+    height: 150vh;
     display: grid;
     grid-template-columns: 2.2fr 2.2fr;
-    grid-template-rows: 1.5fr 7fr 0.4fr;
     grid-template-areas: "menu menu"
       "main main"
       "footer footer"
@@ -280,7 +277,7 @@ footer {
 
   .dragonhead {
     margin: 0;
-    top: 300px;
+    top: 130px;
     position: absolute;
     right: 0;
   }
@@ -290,14 +287,14 @@ footer {
     Top: 800px;
     position: absolute;
     right: 0;
-    top: 900px;
+    top: 600px;
   }
 
   .nature {
     width: 300px;
     Height: 300px;
     padding-left: 30px;
-    margin-top: 500px;
+    margin-top: 400px;
   }
 
   .nature:hover {
@@ -317,13 +314,14 @@ footer {
   .p1 {
     display: inline;
     float: left;
+    padding-top: 40px;
   }
 
   .p2 {
     display: inline;
     position: absolute;
     right: 0;
-    top: 1500px;
+    top: 1000px;
     width: 40%;
     margin-right: 10px;
   }
@@ -339,7 +337,7 @@ footer {
     padding-right: 30px;
     Position: Absolute;
     Right: 5px;
-    top: 250%;
+    top: 75%;
   }
 
   .Fairy:hover {
@@ -351,12 +349,12 @@ footer {
   }
 
   .timeline {
-    height: 215%;
+    height: 90%;
     Width: 3px;
     background-color: grey;
     position: absolute;
     Left: 3%;
-    Top: 48%;
+    Top: 15%;
   }
 
   .year::before {
@@ -367,33 +365,44 @@ footer {
 @media only screen and (max-width: 785px) {
   .container {
     display: grid;
-    height:550vh;
+    height: 550vh;
     grid-template-columns: 2.2fr 2.2fr;
-    grid-template-rows: 0.4fr 6fr 0.4fr;
+    grid-template-rows: 0.4fr 4fr 0.4fr;
     grid-template-areas: "menu menu"
       "main main"
       "footer footer"
   }
 
   .menu {
-    grid-area: menu;
+    grid-area: "menu";
     display: grid;
     grid-template-columns: 2.2fr 2.2fr;
-    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-rows: 0.2fr 0.2fr;
     grid-template-areas: "nav nav"
       "Canvastop title";
   }
 
+  main {
+    grid-area: "main";
+    display: grid;
+    grid-template-columns: 2.2fr 2.2fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "dragon"
+      "list";
+  }
+
   nav {
     width: 100%;
-    grid-area:"nav";
+    grid-area: "nav";
   }
 
   .title {
     grid-area: "title";
   }
 
-  .topimg {grid-area: "Canvastop";}
+  .topimg {
+    grid-area: "Canvastop";
+  }
 
   .navimg {
     width: 40px;
@@ -403,60 +412,61 @@ footer {
 
   h1 {
     display: block;
-    width:100%;
+    width: 100%;
   }
 
   .dragonhead {
     width: 450px;
     height: 200px;
-    top: 10%;
+    top: 150px;
+    grid-area: "dragon";
   }
 
   .dragontail {
     width: 200px;
     height: 200px;
-    Top:750px;
+    Top: 750px;
   }
 
   .nature {
     width: 400px;
     Height: 400px;
-    text-align:center;
-    position:static;
+    text-align: center;
+    position: static;
     padding-right: 5%;
     padding-top: 15%;
   }
-  .nature:hover{
+
+  .nature:hover {
     width: 400px;
     Height: 400px;
-    text-align:center;
-    position:static;
+    text-align: center;
+    position: static;
     padding-top: 15%;
   }
 
   p {
     font-size: 2rem;
-    margin:0;
-    width:100%;
+    margin: 0;
+    width: 100%;
   }
 
   .p2 {
-    width:100%;
-    position:static;
+    width: 100%;
+    position: static;
   }
 
   .Fairy {
     Width: 300px;
     Height: 425px;
-    position:static;
-    bottom:0;
+    position: static;
+    bottom: 0;
   }
 
   .Fairy:hover {
     Width: 300px;
     Height: 425px;
     padding-left: 10px;
-  ;
   }
 
   .timeline {
@@ -472,10 +482,9 @@ footer {
     left: 1.5%;
   }
 
-      ul li {
-      list-style: none;
-      width: 90%;
-
-  padding: 5% 5%;
-    }
+  ul li {
+    list-style: none;
+    width: 90%;
+    padding: 5% 5%;
   }
+}
